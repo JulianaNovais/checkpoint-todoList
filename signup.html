@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ------------------- Biblioteca de icones - Fontawesome -------------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="icon" type="image/x-icon" href="assets/to-do.png">
+  <title>Get Ready Now</title>
+  <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
+  <link rel="stylesheet" href="styles/acesso.css">
+  <script src="scripts/validacoes/utils.js" defer></script>
+  <script src="scripts/signup/signup.js" defer></script>
+  
+  
+</head>
+
+<body>
+
+  <div class="left">
+    <img src="./assets/pessoa-signup.png" alt="">
+  </div>
+  <div class="right">
+    <form action="index.html">
+      <div class="form-header">
+        <p>To-Do App</p>
+      </div>
+
+      <div class="input-div two">
+        <label>
+          <h5>Firstname:</h5>
+          <input class="input" id="inputFname" type="text">
+          <small id="fNameValidation"></small>
+        </label>
+      </div>
+      <div class="input-div two"> <label>
+          <h5>Lastname:</h5>
+          <input class="input" id="inputLname" type="text">
+          <small id="lNameValidation"></small>
+        </label>
+      </div>
+      <div class="input-div two"> <label>
+          <h5>Email:</h5>
+          <input class="input" id="inputCreateEmail" type="email">
+          <small id="emailValidation"></small>
+        </label>
+      </div>
+      <div class="input-div two"> <label>
+          <h5>Password:</h5>
+          <input class="input" id="inputCreatePassword" type="password">
+          <small id="passwordValidation"></small>
+        </label>
+      </div>
+      <div class="input-div two"> <label>
+          <h5>Repeat password:</h5>
+          <input class="input" id="inputRepeatPassword" type="password">
+          <small id="repeatPassValidation"></small>
+        </label>
+      </div>
+
+      <button type="submit" id="signupBtn" disabled>Sign up</button>
+
+
+
+    </form>
+    <div class="log in">
+      <a href="index.html">Already have an account? Log in here</a>
+    </div>
+  </div>
+
+</body>
+
+</html>

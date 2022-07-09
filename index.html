@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App Group 6</title>
+
+    <!-- ---------------- estilos compartilhados entre login e signup ---------------- -->
+    <link rel="stylesheet" href="styles/acesso.css" />
+    <script src="scripts/login/index.js" defer></script>
+    <script src="scripts/validacoes/utils.js" defer></script>
+  </head>
+
+  <body>
+    <div class="left">
+      <img src="./assets/pessoa-login.png" alt="" />
+    </div>
+
+    <div class="right">
+      <form action="index.html">
+        <div class="form-header">
+          <p>To-Do App</p>
+        </div>
+        <h1>Access</h1>
+        <div class="input-div one">
+          <label>
+            <h5>Email:</h5>
+            <input class="input" id="inputEmail" type="email" required />
+            <small id="emailValidation"></small>
+          </label>
+        </div>
+        <div class="input-div two">
+          <label>
+            <h5>Senha:</h5>
+            <input class="input" id="inputPassword" type="password" required />
+            <small id="passwordValidation"></small>
+          </label>
+        </div>
+        <button id="buttonLogin" type="submit" disabled>Acessar</button>
+      </form>
+      <div class="signin">
+        <a href="signup.html">Doesn't have account? Signup right now</a>
+      </div>
+    </div>
+  </body>
+</html>
