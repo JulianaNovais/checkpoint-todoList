@@ -202,3 +202,40 @@ a:hover {
   font-size: 15px;
   transition: .3s;
 }
+
+
+@media screen and (max-width: 1050px) {
+  .left {
+    grid-gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  form {
+    width: 290px;
+  }
+
+  form h1 {
+    font-size: 2.4rem;
+    margin: 8px 0;
+  }
+
+  .left img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .left {
+    display: none;
+  }
+
+  img {
+    grid-template-columns: 1fr;
+  }
+
+  .right {
+    justify-content: center;
+    margin-left: 25%;
+  }
+}
