@@ -11,7 +11,6 @@ Este projeto consiste em um pequeno aplicativo de gerenciamento de tarefas, dent
 * Criar tarefas novas.
 * Visualizar a data de criação de uma tarefa.
 * Remover tarefas.
-* Remover tarefas.
 
 Implementamos também um sistema de autenticação de usuários, que inclui o processo de registro e login.
 
