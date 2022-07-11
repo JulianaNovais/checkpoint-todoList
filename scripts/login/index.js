@@ -65,12 +65,11 @@ buttonLogin.addEventListener('click', function (e) {
       .then((json) => {
         // Ao obter sucesso no login, chama a função de sucesso do login
         successLogin(json)
-        console.log(json) // retirar antes da entrega
       })
       .catch((err) => {
         // Verifica os status de "senha incorreta ou email incorreto"
         if (err.status == 400 || err.status == 404 || err.status == 500) {
-          errorLogin()
+          errorLogin(err)
         }
       })
   }
@@ -88,10 +87,13 @@ function successLogin(successResponse) {
 }
 
 function errorLogin(errorResponse) {
-  console.log(errorResponse)
-
-  console.log(errorResponse.status)
-  //alert('User does not exist and/or Incorrect password and/or Server error')
+  if (errorResponse.status == 400 || errorResponse.status == 404) {
+    alert('User does not exist and/or Incorrect password')
+  } else if (errorResponse.status == 500) {
+    alert('Server error')
+  } else {
+    alert(`ERROR: ${errorResponse.statusText}`)
+  }
 }
 
 /* Validating the email input*/
