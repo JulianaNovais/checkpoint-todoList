@@ -78,7 +78,7 @@ buttonLogin.addEventListener('click', function (e) {
 
 // função em caso de sucesso: irá armazenar o token o sessionStorage
 function successLogin(successResponse) {
-  alert('Sucesso!')
+  //alert('Sucesso!')
 
   // salvando o token obtido da API
   sessionStorage.setItem('jwt', successResponse.jwt)
@@ -89,7 +89,9 @@ function successLogin(successResponse) {
 
 function errorLogin(errorResponse) {
   console.log(errorResponse)
-  alert('User does not exist and/or Incorrect password and/or Server error')
+
+  console.log(errorResponse.status)
+  //alert('User does not exist and/or Incorrect password and/or Server error')
 }
 
 /* Validating the email input*/
