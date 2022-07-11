@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ----------------------------- estilos CSS ----------------------------- -->
-    <link rel="stylesheet" href="./styles/tarefas.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ------------------- Biblioteca de icones - Fontawesome -------------------- -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Js -->
-    <script src="/scripts/tasks/tasks.js" defer></script>
+  <!-- ----------------------------- estilos CSS ----------------------------- -->
+  <link rel="stylesheet" href="./styles/tarefas.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <link rel="icon" type="image/x-icon" href="assets/to-do.png" />
-    <title>Get Ready Now</title>
-  </head>
+  <!-- ------------------- Biblioteca de icones - Fontawesome -------------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Js -->
+  <script src="/scripts/tasks/tasks.js" defer></script>
 
-  <body>
-    <header>
-      <nav>
-        <a href="#" id="tarefas">To-Dos</a>
-      </nav>
-      <!--pesquisar tarefas existentes 
+  <link rel="icon" type="image/x-icon" href="assets/to-do.png" />
+  <title>Get Ready Now</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#" id="tarefas">To-Dos</a>
+    </nav>
+    <!--pesquisar tarefas existentes 
       <form class="listar-tarefas">
         <input
           class="form-control m-auto searchBox"
@@ -39,26 +36,31 @@
         />
       </form>-->
 
-      <!--header usuario e sair da sessao-->
-      <div class="user-info">
-        <p id="userName">username</p>
-        <div class="user-image"></div>
-        <p><a href="#" id="closeApp">log out</a></p>
-      </div>
-    </header>
+    <!--header usuario e sair da sessao-->
+    <div class="user-info">
+      <p id="userName">username</p>
+      <div class="user-image"></div>
+      <p><a href="#" id="closeApp">log out</a></p>
+    </div>
+  </header>
 
-    <!--Formulario nova tarefa e botao submit-->
-    <form class="nova-tarefa">
-      <div></div>
-      <input id="newTask" type="text" placeholder="New Task" name="add" />
+  <!--Formulario nova tarefa e botao submit-->
+  <form class="nova-tarefa">
+    <div>
+
+    </div>
+    <label>
+      <input class="input" id="newTask" type="text" placeholder="" name="add">
+      <h5>New Task</h5>
       <button type="submit">
-        <img src="./assets/plus.png" alt="Adicionar uma nova tarefa" />
+        <img src="./assets/plus.png" alt="Adicionar uma nova tarefa">
       </button>
-    </form>
+    </label>
+  </form>
 
-    <ul class="tarefas-pendentes">
-      <div class="undone-task">
-        <!--        <li class="tarefa">
+  <ul class="tarefas-pendentes">
+    <div class="undone-task">
+      <!--        <li class="tarefa">
         <div id="btnDone" class="not-done"></div>
         <div class="descricao">
           <p class="nome">tarefa 1 </p>
@@ -67,13 +69,13 @@
           <i class="far fa-trash-alt delete"></i>
         </div>
       </li>  -->
-      </div>
-    </ul>
+    </div>
+  </ul>
 
-    <h2 class="titulo-terminadas">Completed Tasks</h2>
-    <ul class="tarefas-terminadas">
-      <div class="done-task">
-        <!-- <li class="tarefa concluida">
+  <h2 class="titulo-terminadas">Completed Tasks</h2>
+  <ul class="tarefas-terminadas">
+    <div class="done-task">
+      <!-- <li class="tarefa concluida">
           <div id="delete" class="not-done"></div>
           <div class="descricao">
             <p class="nome">tarefa 2</p>
@@ -82,10 +84,11 @@
             <i class="far fa-trash-alt delete"></i>
           </div>
         </li> -->
-      </div>
-    </ul>
-    <!--<script src="../scripts/todo.js"></script>-->
+    </div>
+  </ul>
+  <!--<script src="../scripts/todo.js"></script>-->
 
-    <!-- <script src="https://kit.fontawesome.com/e3b1b4d292.js" crossorigin="anonymous"></script> -->
-  </body>
+  <!-- <script src="https://kit.fontawesome.com/e3b1b4d292.js" crossorigin="anonymous"></script> -->
+</body>
+
 </html>
