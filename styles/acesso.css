@@ -112,13 +112,14 @@ a {
   display: block;
   text-align: right;
   text-decoration: none;
-  color: #999;
+  color: #cfcfcf;
   font-size: 0.9rem;
   transition: .6s;
+
 }
 
 a:hover {
-  color: #7898FF;
+  color: #ffffff;
 }
 
 .form-header {
