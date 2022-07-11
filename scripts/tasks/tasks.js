@@ -49,7 +49,7 @@ async function getUserTasks(tokenJwt) {
         })"></div>
         <div class="descricao">
           <p class="nome">${tarefa.description}</p>
-          <p class="timestamp">Criada em: ${formatDate(tarefa.createdAt)}</p>
+          <p class="timestamp">Created at: ${formatDate(tarefa.createdAt)}</p>
           <div onclick="deletarTarefa(${tarefa.id})" >
             <i class="far fa-trash-alt delete">
             </i>
@@ -190,13 +190,9 @@ newTask.addEventListener('submit', (e) => {
 
 // formatando data(será chamada no generateTemplateHtml)
 const formatDate = () => {
-  let data = new Date(),
-    dia = data.getDate().toString(),
-    diaF = dia.length == 1 ? '0' + dia : dia,
-    mes = (data.getMonth() + 1).toString(), //+1 pois no getMonth Janeiro começa com zero.
-    mesF = mes.length == 1 ? '0' + mes : mes,
-    anoF = data.getFullYear()
-  return diaF + '/' + mesF + '/' + anoF
+  let data = new Date().toLocaleDateString('en-us', { year: "numeric", month: "numeric", day: "numeric" });
+    
+  return data;
 }
 // const inputAddedTask = document.querySelector('.tarefas-pendentes div')
 
@@ -207,7 +203,7 @@ const generateTemplateHtml = (todo) => {
         <div id="btnDone" class="not-done"></div>
         <div class="descricao">
           <p class="nome">${todo}</p>
-          <p class="timestamp">Criada em: ${formattedDate}</p>
+          <p class="timestamp">Created at: ${formattedDate}</p>
           <i class="fa-solid fa-pen-to-square edit"></i>
           <i class="far fa-trash-alt delete"></i>
         </div>
