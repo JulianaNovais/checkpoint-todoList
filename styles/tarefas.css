@@ -420,3 +420,7 @@ input:hover {
   width: 1rem;
   height: 1rem;
 }
+body{
+  background: rgb(152,191,241);
+  background: linear-gradient(273deg, rgba(152,191,241,1) 0%, rgba(171,204,235,1) 0%, rgba(207,175,210,1) 100%);
+}
